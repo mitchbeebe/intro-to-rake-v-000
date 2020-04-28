@@ -10,7 +10,12 @@ namespace :greeting do
   end
 end
 
-task :console do 
+task :environment do 
+  require_relative './config/environment.rb'
+end
+
+task :console => :environment do 
+  Pry.start
 end
 
 namespace :db do 
