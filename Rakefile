@@ -1,4 +1,4 @@
-namespace :greeting
+namespace :greeting do
   desc 'outputs hello to the terminal'
   task :hello do
     puts "hello from Rake!"
@@ -6,6 +6,6 @@ namespace :greeting
   
   desc 'outputs hola to the terminal'
   task :hola do
-    puts "hello from Rake!"
+    puts "hola from Rake!"
   end
 end
